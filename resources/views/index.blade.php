@@ -320,13 +320,13 @@
                         </a>
                     </li>
                     
-                    <li>
+                    <li class="{{(isset($page) && $page && $page=='basic' || $page=='colored') ? 'active' : ''}}">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">widgets</i>
                             <span>Widgets</span>
                         </a>
                         <ul class="ml-menu">
-                            <li class="{{(isset($page) && $page && $page=='basic' || 'colored') ? 'active' : ''}}">
+                            <li class="{{(isset($page) && $page && $page=='basic' || $page=='colored') ? 'active' : ''}}">
                                 <a href="javascript:void(0);" class="menu-toggle">
                                     <span>Cards</span>
                                 </a>
@@ -366,7 +366,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li >
+                    <li class="{{(isset($page) && $page && $page=='alert' || $page=='animation') ? 'active' : ''}}">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">swap_calls</i>
                             <span>User Interface (UI)</span>
